@@ -10,7 +10,8 @@
     <meta name="description">
     <meta name="keywords" CONTENT="同人ゲーム,弾幕,アクションRPG,RPG,シューティング,ティルキッス,プリンセスシェイド,リビジョン,MIR">
   
-    <link href="/css/app.css" rel="stylesheet">
+    <script src="/js/app.js" defer></script> {{-- js --}}
+    <link href="/css/app.css" rel="stylesheet"> {{-- caa --}}
   </head>
 
   {{-- body情報 --}}
@@ -23,9 +24,6 @@
     <div id="app">
 
     </div>
-
-    {{-- script --}}
-    <script src="/js/app.js" defer></script>
 
   </body>
 
