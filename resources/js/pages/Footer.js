@@ -1,12 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {Link} from 'react-router-dom';
 
 function Footer() {
-    return (
-        <div>
-            Footer<br />
-        </div>
-    );
+  return (
+    <footer id="footer" class="footer background-pattern">
+      Copyright (C) 2004-  MIR_Revision
+    </footer>
+  );
 }
 
 export default Footer;
