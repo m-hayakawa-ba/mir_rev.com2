@@ -12,6 +12,17 @@
   
     <script src="/js/app.js" defer></script> {{-- js --}}
     <link href="/css/app.css" rel="stylesheet"> {{-- caa --}}
+
+    {{-- 共通のデータを保存 --}}
+    <script>
+        window.year = {{ $year }};
+        window.games = '{!! $games !!}';
+        window.friend_links = '{!! $friend_links !!}';
+        window.material_links = '{!! $material_links !!}';
+        window.histories = '{!! $histories !!}'.replace(/(\r\n)/g, '\\n');
+    </script>
+        
+
   </head>
 
   {{-- body情報 --}}
