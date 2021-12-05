@@ -1,0 +1,617 @@
+/**************************/
+/*        定数定義        */
+/**************************/
+
+//レスポンシブのブレークポイント
+$break_point: 768px;
+
+
+/********************************/
+/*        全体の基本定義        */
+/********************************/
+
+.mt5  {margin-top:  5px}
+.mt10 {margin-top: 10px}
+.mt20 {margin-top: 20px}
+.mt30 {margin-top: 30px}
+.mt40 {margin-top: 40px}
+.mt50 {margin-top: 50px}
+.mt60 {margin-top: 60px}
+.mb5  {margin-bottom:  5px}
+.mb10 {margin-bottom: 10px}
+.mb20 {margin-bottom: 20px}
+.mb30 {margin-bottom: 30px}
+.mb40 {margin-bottom: 40px}
+.mb50 {margin-bottom: 50px}
+.mb60 {margin-bottom: 60px}
+
+html {
+  height: 100%;
+  overflow-y: scroll;
+}
+body {
+  height: 100%;
+  color: #222;
+  background-color: #fff6e3;
+}
+#app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none
+}
+
+.pc-only {
+  display: none;
+  @media screen and (min-width: $break_point) {
+    display: block!important;
+  }
+}
+.sp-only {
+  display: block;
+  @media screen and (min-width: $break_point) {
+    display: none!important;
+  }
+}
+
+
+/********************************/
+/*           共通部品           */
+/********************************/
+
+.image-link,
+.text-link {
+  transition: 0.2s;
+  &:hover {
+    opacity: 0.75;
+  }
+}
+.background-pattern {
+  background: linear-gradient(45deg, #231111 25%, transparent 25%, transparent 75%, #231111 75%),
+              linear-gradient(45deg, #231111 25%, transparent 25%, transparent 75%, #231111 75%);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+  background-color: #371a1c;
+}
+.content {
+  display: block;
+  flex: 1 0 auto;
+  padding: 40px 0;
+}
+
+.main-window {
+  &__wrap {
+    box-sizing: border-box;
+    width: 94%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #c7a695;
+    border: solid #533221;
+    border-width: 4px 1px;
+    box-shadow: 1px 2px 3px #533221;
+    @media screen and (min-width: $break_point) {
+      width: 768px;
+    }
+  }
+  &__inner {
+    padding: 25px 10px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    @media screen and (min-width: $break_point) {
+      padding: 30px;
+    }
+  }
+}
+
+.previous-button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 128px;
+  padding: 20px 0 16px;
+  background: linear-gradient(135deg, #d2bbab, #be968a);
+  color: #271308;
+  font-size: 18px;
+  text-align: center;
+  text-shadow: 0 0 1px #533221;
+  outline: solid 2px #533221;
+  outline-offset: -4px;
+}
+
+/******************************/
+/*        ヘッダー部分        */
+/******************************/
+.header {
+  width: 100%;
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 8px;
+    @media screen and (min-width: $break_point) {
+      margin: 0 auto;
+      padding-top: 20px;
+      padding-bottom: 24px;
+      width: 880px;
+    }
+  }
+
+  &__logo {
+    margin: 16px 0 8px;
+    width: 100%;
+    text-align: center;
+    img {
+      max-width: 248px;
+    }
+    @media screen and (min-width: $break_point) {
+      margin: 0 32px 0 0;
+      padding: 0;
+      width: 248px;
+    }
+  }
+
+  &__link {
+    margin: 0px 6px 12px;
+    padding: 7px 0px 4px;
+    width: 64px;
+    background: linear-gradient(#fbd6a7, #f5ab4c);
+    text-align: center;
+    outline: solid 1px #f8c079;
+    outline-offset: 2px;
+    color: #fff;
+    text-shadow:
+       1px  1px 2px #441a0a,
+      -1px -1px 2px #441a0a,
+      -1px  1px 2px #441a0a,
+       1px -1px 2px #441a0a,
+       1px  0px 2px #441a0a,
+      -1px  0px 2px #441a0a,
+       0px  1px 2px #441a0a,
+       0px -1px 2px #441a0a;
+    @media screen and (min-width: $break_point) {
+      margin: 40px 8px 0;
+      width: 130px;
+    }
+  }
+}
+
+/******************************/
+/*        トップページ        */
+/******************************/
+.index {
+  &__psr-wrap {
+    display: block;
+    width: 98%;
+    margin: 0 auto;
+    @media screen and (min-width: $break_point) {
+      width: 832px;
+    }
+  }
+  &__psr-image {
+  }
+  &__psr-caption {
+    margin-top: 4px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.2;
+    @media screen and (min-width: $break_point) {
+      font-size: 24px;
+    }
+  }
+  &__tir-wrap {
+    margin: 20px auto 0;
+    width: 84%;
+    @media screen and (min-width: $break_point) {
+      margin-top: 50px;
+    }
+  }
+  &__tir-movie {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 75%;
+    @media screen and (min-width: $break_point) {
+      width: 480px;
+      padding-top: 0;
+    }
+    iframe {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      @media screen and (min-width: $break_point) {
+        position: relative;
+        width: 480px;
+        height: 360px;
+      }
+    }
+  }
+  &__tir-caption {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.2;
+    @media screen and (min-width: $break_point) {
+      font-size: 24px;
+    }
+  }
+  &__2column {
+    display: block;
+    justify-content: center;
+    margin-top: 20px;
+    @media screen and (min-width: $break_point) {
+      display: flex;
+      flex-direction: row-reverse;
+      margin-top: 60px;
+    }
+  }
+  &__1st-column {
+    margin: 0 4% 8px;
+    width: 92%;
+    @media screen and (min-width: $break_point) {
+      margin: 0 16px;
+      width: 288px;
+    }
+  }
+  &__2nd-column {
+    margin: 0 4% 0;
+    width: 92%;
+    @media screen and (min-width: $break_point) {
+      margin: 0 16px;
+      width: 600px;
+    }
+  }
+  &__content-title {
+    padding: 8px 0 4px;
+    border-bottom: solid 1px #fff;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 1px 1px 2px #1d0e08;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    text-shadow: 1px 1px 1px #140f23;
+    background: linear-gradient(#8281cf, #494db9);
+  }
+  &__content-main {
+    padding: 12px;
+    border: solid 4px #494db9;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 1px 1px 2px #1d0e08;
+    background-color: #fff;
+  }
+  &__information {
+    display: flex;
+    justify-content: space-evenly;
+    &__image {
+      width: 108px;
+      height: 108px;
+    }
+    &__caption {
+      padding-top: 10px;
+      span {
+        margin-left: 8px;
+        font-weight: bold;
+        line-height: 2.5;
+      }
+      a {
+        margin-left: 12px;  
+        font-weight: bold;
+        line-height: 1.4;
+      }
+    }
+  }
+  &__history {
+    span {
+      font-weight: bold;
+      font-size: 15px;
+    }
+    p {
+      font-size: 15px;
+      margin: 10px 0 24px;
+    }
+  }
+  
+  &__item-wrap {
+    margin-bottom: 25px;
+    @media screen and (min-width: $break_point) {
+      display: flex;
+      align-items: center;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__item-image {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 272px;
+    @media screen and (min-width: $break_point) {
+      width: 234px;
+    }
+  }
+  &__item-text-wrap {
+    width: 96%;
+    margin: 4px auto 0;
+    @media screen and (min-width: $break_point) {
+      width: calc(100% - 234px);
+      margin: 0;
+    }
+  }
+  &__item-title {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    @media screen and (min-width: $break_point) {
+      margin-left: 10px;
+    }
+  }
+  &__item-caption {
+    color: #222;
+    margin: 6px 0 0 6px;
+    font-size: 15px;
+    text-align: justify;
+    @media screen and (min-width: $break_point) {
+      margin: 4px 0 0 16px;
+      font-size: 15px;
+    }
+  }
+}
+
+/******************************/
+/*         ゲーム一覧         */
+/******************************/
+.game {
+  &__item-wrap {
+    margin-bottom: 40px;
+    @media screen and (min-width: $break_point) {
+      display: flex;
+      align-items: center;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__item-image {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 272px;
+    @media screen and (min-width: $break_point) {
+      width: 234px;
+    }
+  }
+  &__item-text-wrap {
+    width: 96%;
+    margin: 4px auto 0;
+    @media screen and (min-width: $break_point) {
+      width: calc(100% - 234px);
+      margin: 0;
+    }
+  }
+  &__item-title {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    @media screen and (min-width: $break_point) {
+      margin-left: 10px;
+      font-size: 17px;
+    }
+  }
+  &__item-caption {
+    color: #222;
+    margin: 6px 0 0 6px;
+    font-size: 15px;
+    text-align: justify;
+    @media screen and (min-width: $break_point) {
+      margin: 4px 0 0 24px;
+      font-size: 15px;
+    }
+  }
+}
+
+/******************************/
+/*           リンク           */
+/******************************/
+.link {
+  &__h2 {
+    text-align: center;
+    padding: 8px 0;
+    margin-bottom: 16px;
+    border: dashed #383838;
+    border-width: 1px 0px;
+    color: #383838;
+  }
+  &__item-wrap {
+    padding: 12px 8px;
+    margin: 0px 0;
+    background-color: #fff;
+    &:nth-child(odd) {
+      background-color: #f0e4df;
+    }
+    @media screen and (min-width: $break_point) {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__item-image {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 272px;
+    height: 52px;
+    @media screen and (min-width: $break_point) {
+      width: 234px;
+      height: 60px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__item-text-wrap {
+    width: 96%;
+    margin: 6px auto 0;
+    @media screen and (min-width: $break_point) {
+      width: calc(100% - 234px);
+      margin: 0;
+    }
+  }
+  &__item-name {
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    @media screen and (min-width: $break_point) {
+      margin-left: 10px;
+      font-size: 15px;
+    }
+  }
+  &__item-caption {
+    color: #222;
+    margin: 6px 0 0 6px;
+    font-size: 15px;
+    text-align: justify;
+    @media screen and (min-width: $break_point) {
+      margin: 4px 0 0 24px;
+      font-size: 15px;
+    }
+  }
+  &__announce {
+    font-size: 15px;
+    text-align: center;
+  }
+  &__banner {
+    margin: 20px 0 10px;
+    text-align: center;
+    img {
+      display: block;
+      width: 200px;
+      height: 40px;
+      margin: 0 auto 12px;
+      @media screen and (min-width: $break_point) {
+        display: inline;
+        margin: 0 6px;
+      }
+    }
+  }
+}
+
+
+/******************************/
+/*        プロフィール        */
+/******************************/
+.profile {
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: justify;
+  }
+  &__face {
+    width: 108px;
+  }
+
+  &__information {
+    width: calc(100% - 108px);
+    box-sizing: border-box;
+    padding: 6px 4px;
+    border-top: dashed 1px #383838;
+    border-bottom: dashed 1px #383838;
+    @media screen and (min-width: $break_point) {
+      width: calc(96% - 108px);
+      padding: 12px 12px;
+    }
+  }
+  &__game {
+    width: 100%;
+    margin-top: 12px;
+    @media screen and (min-width: $break_point) {
+      margin-left: 26px;
+    }
+  }
+  &__information, &__game {
+    line-height: 1.6;
+    &__title {
+      font-weight: bold;
+      margin-left: 0px;
+      margin-bottom: 5px;
+    }
+    div:nth-child(2) {
+
+    }
+    div {
+      span:first-child {
+        font-weight: bold;
+        display: inline-block;
+        @media screen and (min-width: $break_point) {
+          margin-left: 24px;
+        }
+      }
+      span:nth-child(2) {
+        font-size: 14px;
+        @media screen and (min-width: $break_point) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  &__information {
+    div {
+      span:first-child {
+        margin-right: 8px;
+        @media screen and (min-width: $break_point) {
+          margin-right: 0;
+          width: 96px;
+        }
+      }
+    }
+  }
+  &__game {
+    div {
+      span:first-child {
+        display: block;
+        @media screen and (min-width: $break_point) {
+          display: inline-block;
+          width: 256px;
+        }
+      }
+      span:nth-child(2) {
+        display: block;
+        margin: 0 0 12px 24px;
+        @media screen and (min-width: $break_point) {
+          display: inline;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+}
+
+
+/******************************/
+/*        フッター部分        */
+/******************************/
+.footer {
+  padding: 24px 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 64px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  @media screen and (min-width: $break_point) {
+    font-size: 16px;
+  }
+}
