@@ -47,7 +47,7 @@ function Home() {
               <div className="index__information__caption">
                 <span>管理人 ＭＩＲ</span><br />
                 <Link to="/profile" className="text-link">・プロフィール</Link><br />
-                <Link to="/contact" className="text-link">・連絡先</Link>
+                <a href="https://ws.formzu.net/fgen/S27906946/" className="text-link" target="blank">・連絡先</a>
               </div>
             </div>
           </div>

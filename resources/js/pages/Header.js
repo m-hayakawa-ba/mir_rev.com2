@@ -24,16 +24,16 @@ function Header() {
             リンク
           </div>
         </Link>
-        <a href="/" className="header__link image-link">
+        <a href="https://tirliss.wordpress.com/" className="header__link image-link" target="blank">
           <div>
             ブログ
           </div>
         </a>
-        <Link to="/contact" className="header__link image-link">
+        <a href="https://ws.formzu.net/fgen/S27906946/" className="header__link image-link" target="blank">
           <div>
             ご連絡
           </div>
-        </Link>
+        </a>
   
       </div>
     </header>

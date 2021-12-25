@@ -5648,14 +5648,16 @@ function Header() {
           children: "\u30EA\u30F3\u30AF"
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-        href: "/",
+        href: "https://tirliss.wordpress.com/",
         className: "header__link image-link",
+        target: "blank",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
           children: "\u30D6\u30ED\u30B0"
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
-        to: "/contact",
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+        href: "https://ws.formzu.net/fgen/S27906946/",
         className: "header__link image-link",
+        target: "blank",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
           children: "\u3054\u9023\u7D61"
         })
@@ -5752,9 +5754,10 @@ function Home() {
                 to: "/profile",
                 className: "text-link",
                 children: "\u30FB\u30D7\u30ED\u30D5\u30A3\u30FC\u30EB"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
-                to: "/contact",
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+                href: "https://ws.formzu.net/fgen/S27906946/",
                 className: "text-link",
+                target: "blank",
                 children: "\u30FB\u9023\u7D61\u5148"
               })]
             })
