@@ -10,7 +10,7 @@ function Home() {
     <div className="content">
 
       {/* プリンセスリビジョン */}
-      <a className="index__psr-wrap image-link" href="/test">
+      <a className="index__psr-wrap image-link" href="/game_psr">
         <div className="index__psr-image">
           <img src="/image/psr.jpg" alt="プリンセスシェイド バナー画像" />
         </div>
@@ -80,7 +80,7 @@ function Home() {
                     <img src={ game.thumbnail_url } alt={ game.title } />
                   </a>
                   <div className="index__item-text-wrap">
-                    <a className="index__item-title text-link" href="/">
+                    <a className="index__item-title text-link" href={ game.link_url }>
                       { game.title }
                     </a>
                     <div className="index__item-caption">
