@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import {Helmet} from 'react-helmet';
 
 function Home() {
 
@@ -8,6 +9,13 @@ function Home() {
 
   return (
     <div className="content">
+
+      {/* head情報 */}
+      <Helmet>
+        <title>MIR_Revision 同人ゲームを作ったり配布したりしてるサイトです ^ν^</title>
+        <meta name="description" content="同人ゲームサークル MIR_Revision のホームページです。アクションＲＰＧやパズルゲームの開発・販売・配布を行っています。"></meta>
+        <link rel="canonical" href={ APP_URL } /> 
+      </Helmet>
 
       {/* プリンセスリビジョン */}
       <a className="index__psr-wrap image-link" href="/game_psr">

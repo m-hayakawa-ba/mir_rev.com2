@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import {Helmet} from 'react-helmet';
 
 function ExternalLink() {
 
@@ -8,6 +9,13 @@ function ExternalLink() {
 
   return (
     <div className="content">
+
+      {/* head情報 */}
+      <Helmet>
+        <title>MIR_Rev.｜おすすめリンク</title>
+        <meta name="description" content="お友達のリンクや、ゲーム制作に便利な素材サイトなどのリンク集です。"></meta>
+        <link rel="canonical" href={ APP_URL + "/link" } /> 
+      </Helmet>
     
       {/* メインコンテンツ */}
       <div className="main-window__wrap">

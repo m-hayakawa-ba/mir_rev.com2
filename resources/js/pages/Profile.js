@@ -1,10 +1,18 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import {Helmet} from 'react-helmet';
 
 function Profile() {
 
   return (
     <div className="content">
+
+      {/* head情報 */}
+      <Helmet>
+        <title>MIR_Rev.｜管理人プロフィール</title>
+        <meta name="description" content="管理人ＭＩＲのプロフィールと秘密です。"></meta>
+        <link rel="canonical" href={ APP_URL + "/profile" } /> 
+      </Helmet>
     
       {/* メインコンテンツ */}
       <div className="main-window__wrap">

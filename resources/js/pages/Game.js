@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import {Helmet} from 'react-helmet';
 
 function Game() {
 
@@ -7,6 +8,13 @@ function Game() {
 
   return (
     <div className="content">
+
+      {/* head情報 */}
+      <Helmet>
+        <title>MIR_Rev.｜配布ゲーム一覧</title>
+        <meta name="description" content="制作したゲームソフトの一覧ページです。無料で配布されているゲームソフトもあります。"></meta>
+        <link rel="canonical" href={ APP_URL + "/game" } /> 
+      </Helmet>
     
       {/* メインコンテンツ */}
       <div className="main-window__wrap">
@@ -15,7 +23,7 @@ function Game() {
           {/* ゲームリストの表示 */}
           <ul>
             {array_games.map((game) => 
-              <li key={game.id} className="game__item-wrap">
+              <li key={ game.id } className="game__item-wrap">
                 <a className="game__item-image image-link" href={ game.link_url }>
                   <img src={ game.thumbnail_url } />
                 </a>
