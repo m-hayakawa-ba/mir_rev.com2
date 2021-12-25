@@ -7,22 +7,22 @@ function Profile() {
     <div className="content">
     
       {/* メインコンテンツ */}
-      <div class="main-window__wrap">
-        <div class="main-window__inner">
+      <div className="main-window__wrap">
+        <div className="main-window__inner">
           
-          <div class="profile__wrap">
+          <div className="profile__wrap">
             {/* 顔画像 */}
-            <div class="profile__face">
+            <div className="profile__face">
               <img src="/image/mir.jpg" alt="管理人MIR イメージ画像" />
             </div>
             {/* 基本情報 --> */}
-            <div class="profile__information">
-              <h2 class="profile__information__title">
+            <div className="profile__information">
+              <h2 className="profile__information__title">
                 管理人情報
               </h2>
               <div>
                 <span>名前</span>
-                <span>ＭＩＲ<br class="sp-only" />（えむあいあーる）</span>
+                <span>ＭＩＲ<br className="sp-only" />（えむあいあーる）</span>
               </div>
               <div>
                 <span>出身地</span>
@@ -34,8 +34,8 @@ function Profile() {
               </div>
             </div>
             {/* ゲーム情報 */}
-            <div class="profile__game">
-              <h2 class="profile__game__title">
+            <div className="profile__game">
+              <h2 className="profile__game__title">
                 ゲーム履歴
               </h2>
               <div>
@@ -63,7 +63,7 @@ function Profile() {
                 <span>斑鳩（ＡＣ）</span>
               </div>
               <div>
-                <span>大人になって好きになったゲーム</span>
+                <span>大人になっても楽しめるゲーム</span>
                 <span>逆転裁判（ＧＢＡ）</span>
               </div>
             </div>

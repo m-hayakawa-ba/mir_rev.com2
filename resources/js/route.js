@@ -2,9 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {
   BrowserRouter,
-  Router,
-  Routes,
   Route,
+  Switch,
 } from 'react-router-dom';
 
 import Header       from './pages/Header';
@@ -16,29 +15,28 @@ import Game         from './pages/Game';
 import ExternalLink from './pages/ExternalLink';
 import Profile      from './pages/Profile';
 
-// import ScrollToTop  from './Component/ScrollToTop'; 
+import ScrollToTop  from './Component/ScrollToTop'; 
 
 function App() {
   return (
-    <React.Fragment>
+    <div id="app-wrap">
       <Header />
-      <Routes>
-        <Route path="/"        element={<Home />} />
-        <Route path="/example" element={<Example />} />
-        <Route path="/game"    element={<Game />} />
-        <Route path="/link"    element={<ExternalLink />} />
-        <Route path="/profile" element={<Profile />} />
-      </Routes>
+      <Switch>
+        <Route path="/"        exact component={Home} />
+        <Route path="/example" exact component={Example} />
+        <Route path="/game"    exact component={Game} />
+        <Route path="/link"    exact component={ExternalLink} />
+        <Route path="/profile" exact component={Profile} />
+      </Switch>
       <Footer />
-    </React.Fragment>
+    </div>
   );
 }
 
 ReactDOM.render((
     <BrowserRouter>
-      {/* <ScrollToTop> */}
-        <App />
-      {/* </ScrollToTop> */}
+      <ScrollToTop />
+      <App />
     </BrowserRouter>
   ), document.getElementById('app')
 )
