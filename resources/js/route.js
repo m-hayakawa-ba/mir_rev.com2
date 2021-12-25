@@ -14,6 +14,9 @@ import Home         from './pages/Home';
 import Example      from './pages/Example';
 import Game         from './pages/Game';
 import ExternalLink from './pages/ExternalLink';
+import Profile      from './pages/Profile';
+
+// import ScrollToTop  from './Component/ScrollToTop'; 
 
 function App() {
   return (
@@ -24,6 +27,7 @@ function App() {
         <Route path="/example" element={<Example />} />
         <Route path="/game"    element={<Game />} />
         <Route path="/link"    element={<ExternalLink />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
       <Footer />
     </React.Fragment>
@@ -32,7 +36,9 @@ function App() {
 
 ReactDOM.render((
     <BrowserRouter>
-      <App />
+      {/* <ScrollToTop> */}
+        <App />
+      {/* </ScrollToTop> */}
     </BrowserRouter>
   ), document.getElementById('app')
 )
