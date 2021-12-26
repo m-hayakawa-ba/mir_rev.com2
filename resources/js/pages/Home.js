@@ -31,7 +31,7 @@ function Home() {
       {/* ティルキッス */}
       <div className="index__tir-wrap">
         <div className="index__tir-movie">
-          <iframe src="https://www.youtube.com/embed/LQeSjsx3N5s" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          <iframe src="https://www.youtube.com/embed/LQeSjsx3N5s" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowFullScreen></iframe>
         </div>
       </div>
       <div className="index__tir-caption">
