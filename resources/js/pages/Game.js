@@ -24,11 +24,11 @@ function Game() {
           <ul>
             {array_games.map((game) => 
               <li key={ game.id } className="game__item-wrap">
-                <a className="game__item-image image-link" href={ game.link_url }>
+                <a className="game__item-image image-link gtm-game_link" href={ game.link_url } data-gtm={ game.title }>
                   <img src={ game.thumbnail_url } />
                 </a>
                 <div className="game__item-text-wrap">
-                  <a className="game__item-title text-link" href="/">
+                  <a className="game__item-title text-link gtm-game_link" href={ game.link_url } data-gtm={ game.title }>
                     { game.title }({ game.status })
                   </a>
                   <div className="game__item-caption">

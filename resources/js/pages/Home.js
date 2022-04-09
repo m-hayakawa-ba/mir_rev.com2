@@ -17,8 +17,8 @@ function Home() {
         <link rel="canonical" href={ APP_URL } /> 
       </Helmet>
 
-      {/* プリンセスリビジョン */}
-      <a className="index__psr-wrap image-link" href="/game_psr">
+      {/* プリンセスシェイド リビジョン */}
+      <a className="index__psr-wrap image-link gtm-game_link" href="/game_psr" data-gtm="プリンセスシェイド リビジョン">
         <div className="index__psr-image">
           <img src="/image/psr.jpg" alt="プリンセスシェイド バナー画像" />
         </div>
@@ -31,11 +31,11 @@ function Home() {
       {/* ティルキッス */}
       <div className="index__tir-wrap">
         <div className="index__tir-movie">
-          <iframe src="https://www.youtube.com/embed/LQeSjsx3N5s" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy" allowFullScreen></iframe>
+          <iframe loading="lazy" src="https://www.youtube.com/embed/LQeSjsx3N5s" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
       </div>
       <div className="index__tir-caption">
-        <a href="/" className="text-link">
+        <a href="/" className="text-link gtm-game_link" data-gtm="ティルキッス ～Princess Shade～">
           弾幕アクションＲＰＧ 第一弾！<br />
           「ティルキッス ～Princess Shade～」<br className="sp-only" />フリーソフト配布中！
         </a>
@@ -84,11 +84,11 @@ function Home() {
             <ul>
               {array_games.map((game) => 
                 <li key={ game.id } className="index__item-wrap">
-                  <a className="index__item-image image-link" href={ game.link_url }>
+                  <a className="index__item-image image-link gtm-game_link" href={ game.link_url } data-gtm={ game.title }>
                     <img src={ game.thumbnail_url } alt={ game.title } />
                   </a>
                   <div className="index__item-text-wrap">
-                    <a className="index__item-title text-link" href={ game.link_url }>
+                    <a className="index__item-title text-link gtm-game_link" href={ game.link_url } data-gtm={ game.title }>
                       { game.title }
                     </a>
                     <div className="index__item-caption">
