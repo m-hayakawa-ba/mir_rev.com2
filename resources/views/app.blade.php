@@ -18,6 +18,7 @@
     <meta name="keywords" CONTENT="同人ゲーム,弾幕,アクションRPG,RPG,シューティング,ティルキッス,プリンセスシェイド,リビジョン,MIR">
     <link rel="icon" href="/image/icon.ico" id="favicon">
     <link rel="apple-touch-icon" sizes="256x256" href="/image/icon.png">
+    <script src="/js/app.js" defer></script> {{-- js --}}
     <link href="/css/app.css" rel="stylesheet"> {{-- caa --}}
 
     {{-- 定数を保存 --}}
@@ -50,9 +51,6 @@
     <div id="app">
     </div>
 
-    {{-- js --}}
-    <script src="/js/app.js" defer></script> 
-    
   </body>
 
 </html>
